@@ -1,4 +1,4 @@
-~~~ README ~~~
+=== README ===
 
 The purpose of this repository is to track all the stuff I'm doing as I try to be a less-bad programmer.
 
