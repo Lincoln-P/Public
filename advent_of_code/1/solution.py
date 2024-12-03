@@ -2,6 +2,7 @@ import pandas as pd
 from IPython.display import display
 import os
 
+
 def readInputCsv(fileName: str) -> pd.DataFrame:
     """
     Read a CSV file into a pandas dataframe
@@ -20,13 +21,14 @@ def readInputCsv(fileName: str) -> pd.DataFrame:
         print("Something went wrong, check input csv")
         return df
 
+
 # read the input file into a dataframe
-df = readInputCsv('input.csv')
+df = readInputCsv("input.csv")
 # display(df)
 
 # create two lists from the dataframe
-list1 = df['column1'].tolist()
-list2 = df['column2'].tolist()
+list1 = df["column1"].tolist()
+list2 = df["column2"].tolist()
 
 # sort the lists
 list1.sort()
