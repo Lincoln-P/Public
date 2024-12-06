@@ -1,29 +1,11 @@
 import pandas as pd
 from IPython.display import display
 import os
-
-
-def readInputCsv(fileName: str) -> pd.DataFrame:
-    """
-    Read a CSV file into a pandas dataframe
-
-    Inputs:
-    fileName -- the input filename (including path)
-
-    Returns an empty dataframe if it is not able to read the input file
-    """
-
-    df = pd.DataFrame()
-    try:
-        df = pd.read_csv(fileName)
-        return df
-    except:
-        print("Something went wrong, check input csv")
-        return df
+from modules.read_file import read_file
 
 
 # read the input file into a dataframe
-df = readInputCsv("input.csv")
+df = read_file('./1/input.csv', 'csv')
 # display(df)
 
 # create two lists from the dataframe
