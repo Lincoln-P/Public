@@ -13,7 +13,6 @@ inputText = f.read().replace('\n',"")
 muls = []
 muls = re.findall("mul\(\d+\,\d+\)", inputText)
 
-
 # we know the format is going to be mul(x,y) so we can just concatenate
 # the list and extract the digits
 mulString = ''.join(muls)
