@@ -1,5 +1,3 @@
-
-
 import pandas as pd
 
 def read_file(filePath: str, fileType: str, headerFlag: int = 0, excelSheet: str = 0) -> pd.DataFrame():
